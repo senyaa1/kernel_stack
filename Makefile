@@ -7,7 +7,7 @@ clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 
 install:
-	sudo insmod ${NAME}.ko
+	sudo insmod ${NAME}.ko dyndbg
 
 uninstall:
 	sudo rmmod ${NAME}.ko
